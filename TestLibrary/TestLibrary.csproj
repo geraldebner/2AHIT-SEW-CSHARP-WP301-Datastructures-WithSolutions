@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.10" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.10" />
+    <PackageReference Include="coverlet.collector" Version="3.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\00-Team\00-Team.csproj" />
+    <ProjectReference Include="..\00-Stadium\00-Stadium.csproj" />
+    <ProjectReference Include="..\01-StadiumArray\01-StadiumArray.csproj" />
+    <ProjectReference Include="..\02-TeamList\02-TeamList.csproj" />
+    <ProjectReference Include="..\03-TeamDictionary\03-TeamDictionary.csproj" />
+  </ItemGroup>
+
+</Project>
